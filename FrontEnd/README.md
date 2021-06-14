@@ -12,7 +12,7 @@ El proyecto fue solicitado y realizado en Angular para el FrontEnd  y .Net Core 
 # Tecnologías
 
 This project was generated with 
-* [Angular CLI]version 12.0.3.
+* [Angular CLI] version 12.0.3.
 * Node v14.17.0
 * npm 6.14.13
 * C# V
