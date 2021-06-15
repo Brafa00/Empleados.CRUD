@@ -1,5 +1,18 @@
 ## Sistema de Gestión de Empleados
 
+## Tabla de contenidos
+
+* [Introducción](#Introducción)
+* [Tecnologías](#Tecnologías)
+* [Ejecucion BackEnd](#Ejecucion-BackEnd)
+* [Servidor de desarrollo](#Servidor-de-desarrollo)
+* [Scaffolding de código](#Scaffolding-de-código)
+* [construir](#construir)
+* [Ejecución de pruebas unitarias](#Ejecución-de-pruebas-unitarias)
+* [Ejecución de pruebas de un extremo a otro](#Ejecución-de-pruebas-de-un-extremo-a-otro)
+* [Recomendaciones](#Recomendaciones)
+* [Más ayuda](#Más-ayuda)
+
 # Introducción
 
 Se realiza sistema de administración de empleados, para la empresa Apis, en el cúal se solicita un CRUD basico teniendo en cuenta los requisitos funcionales como no funcionales descritos en un correo formal.
@@ -11,35 +24,45 @@ El proyecto fue solicitado y realizado en Angular para el FrontEnd  y .Net Core 
 
 # Tecnologías
 
-This project was generated with 
+Este proyecto se generó con:
+
 * [Angular CLI] version 12.0.3.
 * Node v14.17.0
 * npm 6.14.13
-* C# V
+* .net Core v3.1
 * Microsoft Sql Server Management Studio 18
 * Patron Repository
-* Angular Material UI v7.3.7
+* Angular Material UI v12.0.4
 
-## Development server
+## Ejecucion BackEnd
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+El proyecto es Code First,  lo que quiere decir  que dentro del proyecto se encuentran las migraciones de Entity Framework Core, las cuales se ejecutan automáticamente al iniciar la aplicación, creando así la estructura de la base de datos.
 
-## Code scaffolding
+## Servidor de desarrollo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecute `ng serve` para un servidor de desarrollo. Vaya a `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen.
 
-## Build
+## Scaffolding de código
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecute `ng generate component component-name` para generar un nuevo componente. También puede usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running unit tests
+## construir
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecutar para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio. `ng build` `dist/`
 
-## Running end-to-end tests
+## Ejecución de pruebas unitarias
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
 
-## Further help
+## Ejecución de pruebas de un extremo a otro
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecute `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una plataforma de su elección. Para usar este comando, primero debe agregar un paquete que implemente capacidades de prueba de un extremo a otro.
+
+## Recomendaciones
+
+Ejecutar la aplicación en Visual Studio 2019 para la depuración.
+
+## Más ayuda
+
+Para obtener más ayuda sobre el uso de angular CLI vaya a [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obtener más informacion sobre el uso de Code First vaya a [Code First en una nueva base de datos](https://docs.microsoft.com/es-es/ef/ef6/modeling/code-first/workflows/new-database)
